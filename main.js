@@ -46,9 +46,11 @@ function resetTimer() {
     playPauseEl.classList.remove("fa-pause");
     playPauseEl.classList.add("fa-play");
   }
+
+  playPauseBtnEl.style.backgroundColor = "#3cb35a";
   clearInterval(timerId);
   [hour, minute, second] = [0, 0, 0];
-  timeEl.innerHTML = `00:00:00`;
+  timeEl.innerHTML = `00: 00: 00`;
 }
 
 // Pause Play click event
