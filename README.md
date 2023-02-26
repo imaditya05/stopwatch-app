@@ -2,7 +2,7 @@
 
 This is a simple stopwatch website created using vanilla JS, HTML and CSS.
 
-![Stopwatch Website](https://i.imgur.com/2xQmGny.png)
+![Stopwatch Website](product-screenshot/stopwatch.png)
 
 ## Features
 
@@ -24,7 +24,7 @@ This is a simple stopwatch website created using vanilla JS, HTML and CSS.
 
 ## Credits
 
-This project was created by [Aditya Gupta](https://github.com/yourname).
+This project was created by [Aditya Gupta](https://github.com/imaditya05).
 
 ## License
 
