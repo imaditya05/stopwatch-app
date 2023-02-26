@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #3cb35a;
+  --dark-color: #03012c;
+  --mid-color: #635e79;
+  --light-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+
+  color: white;
+}
+
+.stopwatch {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color);
+  padding: 50px 100px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 3px rgba(3, 1, 44, 0.8), -2px -2px 3px rgba(3, 1, 44, 0.8);
+}
+
+.stopwatch .time {
+  width: 100%;
+  display: inline-block;
+  font-size: 42px;
+}
+
+.stopwatch .time-container {
+  text-align: center;
+  width: 100%;
+  padding: 10px 10px;
+}
+.btns {
+  display: flex;
+  gap: 4rem;
+}
+
+.btns .btn {
+  background-color: var(--brand-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s transform;
+}
+
+.btns .btn:hover {
+  transform: scale(1.1);
+}
+
+.btns .btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 35em) {
+  .stopwatch {
+    width: 300px;
+    padding: 20px 25px;
+    gap: 1.5rem;
+  }
+  stopwatch .time {
+    font-size: 28px;
+  }
+}
